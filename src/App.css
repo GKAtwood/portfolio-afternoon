@@ -1,38 +1,123 @@
-.App {
+.App{
   text-align: center;
+  height: 100vh;
+  background-image: url(https://usavisa.com.ar/assets/introjs/example/bootstrap/v3/img/header-bg.jpg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.span{
+  font: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-header{
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px, 25px;
+  color:white;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header h1{
+  margin-left: 200px;
+  color: gold;
+  font-family:Brush Script Std ;
+  font-style: italic;
+}
+
+.desktop-menu{
+  width:350px;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 300px;
+  
+}
+
+
+
+.dropdown{
+  display:none;
+}
+
+.mobile-menu{
+  display: none;
+
+}
+
+.section button{
+   
+    background-color: goldenrod;
+    border-radius: 3%;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+.section h2{
+  color:white;
+  font-size: 50px;
+  font-family:Lucida Sans;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 160px;
+}
+
+.section h3{
+  color: white;
+  font-size: 80px;
+  
+}
+
+@media(max-width: 768px){
+.main-header{
+  height: 50px;
+}
+
+  .desktop-menu{
+    display:none;
+  } 
+
+.dropdown{
+  display: inherit;
+  color:white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  display: initial;
+  height:250px;
+  width: 250px;
+  position: fixed;
+  background:goldenrod;
+  top: 50px;
+  right: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+
+
+}
 }
 
-.App-link {
-  color: #61dafb;
+@media(max-width: 500px){
+  .main-header{
+    height: 35px;
+  }
+
+  .desktop-menu{
+    display: none;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

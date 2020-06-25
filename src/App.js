@@ -19,11 +19,11 @@ render(){
             <header className = 'main-header'>
               <h1>Start Bootstrap</h1>
               <nav className= 'desktop-menu'>
-                <span>SERVICES</span>
-                <span>PORTFOLIO</span>
-                <span>ABOUT</span>
-                <span>TEAM</span>
-                <span>CONTACT</span>
+                <p>SERVICES</p>
+                <p>PORTFOLIO</p>
+                <p>ABOUT</p>
+                <p>TEAM</p>
+                <p>CONTACT</p>
               </nav>
               <div className = 'dropdown' onClick = {this.toggleDropdown}>MENU</div>
                 {this.state.dropdownView

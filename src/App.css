@@ -24,6 +24,7 @@
   color: gold;
   font-family:Brush Script Std ;
   font-style: italic;
+  letter-spacing: 2px;
 }
 
 .desktop-menu{
@@ -31,7 +32,8 @@
   color:white;
   display: flex;
   justify-content: space-between;
-  margin-right: 300px;
+  margin-right: 400px;
+
   
 }
 
